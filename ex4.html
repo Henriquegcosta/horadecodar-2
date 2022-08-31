@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var val1 = parseInt(prompt("Informe um valor: "));
+        var val2 = parseInt(prompt("Informe mais um valor: "));
+        var val3 = parseInt(prompt("Informe mais um valor: "));
+        var m;
+
+
+        if (val1 > val2 && val1 > val3 && val2 > val3){
+            m = val1 + val2;
+            alert("A soma: " + val1 + " + " + val2 + " é igual a: " + m)
+        } else if (val2 > val1 && val2 > val3 && val3 > val1){
+            m = val2 + val3;
+            alert("A soma: " + val2 + " + " + val3 + " é igual a: " + m)
+        } else if (val3 > val1 && val3 > val2 && val1 > val2){
+            m = val3 + val1;
+            alert("A soma: " + val1 + " + " + val3 + " é igual a: " + m)
+        } else if (val1 == val2 && val1 == val3 && val2 == val3){
+            alert("Todos os numeros sao iguais...");
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

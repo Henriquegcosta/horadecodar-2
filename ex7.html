@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //7. Faça um programa que leia 6 números que o usuário vai informar. 
+        //Todos os números lidos com valor inferior a 72 devem ser somados. 
+        //Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+
+        var num1, numm1 = 0;
+        var num2, numm2 = 0;
+        var num3, numm3 = 0;
+        var num4, numm4 = 0;
+        var num5, numm5 = 0;
+        var num6, numm6 = 0;
+        var ler = 5;
+        var num;
+
+        while(ler >= 0){
+            num = parseInt(prompt("Informe um valor: "));
+
+            // num
+            if(ler > 4){
+                if (num < 72){
+                    num1 = num;
+                    numm1 = num;
+                } else {
+                    num1 = 0;
+                    numm1 = num;
+                }
+            // num2    
+            } else if(ler > 3){
+                if (num < 72){
+                    num2 = num;
+                    numm2 = num;
+                } else {
+                    num2 = 0;
+                    numm2 = num;
+                }
+            // num3  
+            } else if(ler > 2){
+                if (num < 72){
+                    num3 = num;
+                    numm3 = num;
+                } else {
+                    num3 = 0;
+                    numm3 = num;
+                }
+            // num4
+            } else if(ler > 1){
+                if (num < 72){
+                    num4 = num;
+                    numm4 = num;
+                } else {
+                    num4 = 0;
+                    numm4 = num;
+                }
+            // num5
+            } else if(ler > 0){
+                if (num < 72){
+                    num5 = num;
+                    numm5 = num;
+                } else {
+                    num5 = 0;
+                    numm5 = num;
+                }
+            // num6
+            } else if (ler >= 0){
+                if (num < 72){
+                    num6 = num;
+                    numm6 = num;
+                } else {
+                    num6 = 0;
+                    numm6 = num;
+                }
+            }
+            
+            ler--;
+        }
+
+        var soma = num1 + num2 + num3 + num4 + num5 + num6;
+
+
+        document.write("Os numeros foram: <br>")
+        document.write(numm1 + " " + numm2 + " " + numm3 + " " + numm4 + " " + numm5 + " " + numm6 + "<br>")
+        document.write("A soma dos numeros menores que 72 foi: <br>")
+        document.write(soma)
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

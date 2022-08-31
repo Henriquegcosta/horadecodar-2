@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var num1 = 0;
+        var num2 = 0;
+
+
+        function inicio(){
+
+            num1 = parseInt(prompt("CALCULADORA: Escolha um numero: "));
+            num2 = parseInt(prompt("CALCULADORA: Escolha outro numero: "));
+
+            escolha()
+
+        }
+
+        function escolha(){
+            var escolha = parseInt(prompt("CALCULADORA (Escolha um numero): 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação "));
+
+            var soma = num1 + num2;
+            var subtraçao = num1 - num2;
+            var divisao = num1 / num2;
+            var multiplicaçao = num1 * num2;
+
+            if (escolha < 1 || escolha > 4){
+                var confirma = confirm("Escolha uma das opçoes >:(");
+
+                if (confirma){
+                    inicio();
+                } else {
+                    window.close;
+                }
+
+            } else {
+                if(escolha == 1){
+                    alert("A soma dos numeros é: " + soma);
+                } else if(escolha == 2){
+                    alert("A subtraçao dos numeros é: " + subtraçao);
+                } else if(escolha == 3){
+                    alert("A divisao dos numeros é: " + divisao);
+                } else if(escolha == 4){
+                    alert("A multiplicaçao é igual a: " + multiplicaçao);
+                }
+            }
+
+            inicio();
+
+        }
+
+        inicio();
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
